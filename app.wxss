@@ -1,0 +1,105 @@
+@import 'weui.wxss';
+
+.strong{
+  font-weight: bold;
+}
+.tc{
+  text-align: center;
+}
+
+/* page */
+/* 通常我们在app.wxss 设定一些适用于全局的样式 */
+/* 通常所有的界面都已container为基础容器 */
+.container {
+  /* 设定垂直方向的布局 */
+  display :flex;
+  flex-direction: column;   
+  min-height: 100%;
+  width: 100%;
+  /*space between 最左边和最右边的元素靠边，其他元素靠中间排列 间距相同  */
+  justify-content:flex-start; 
+  font-size: 32rpx;
+  font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif; 
+}
+
+.page-body {
+  width: 100%;
+  /*当元素不足以挤满当前空间的时候，按照比例放大 每个item的 flex-grow的比重相当于Liearlayout的weight  */
+  flex-grow: 1;
+  /*不显示超出x轴的元素  */
+  overflow-x: hidden
+}
+
+/*元素水平居中的垂直布局  */
+.page-body-wrapper {
+  display: flex;
+  flex-direction: column;
+  /*定义子元素的位置 center为居中  所有子元素以当前元素的定义控件 y轴居中 */
+  align-items: center;
+  width: 100%
+}
+
+/*带左右padding的垂直布局 元素水平居中  */
+.page-body-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  /*padding 上 又 下 左  */ 
+  padding: 50rpx 0 150rpx 0 ;
+}
+
+.page-body-wording {
+  text-align: center;
+  padding: 200rpx 100rpx
+}
+
+
+/* widget */
+.btn-area{
+  margin-top: 60rpx;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 30rpx;
+}
+
+
+page{
+    background-color: #F8F8F8;
+    font-size: 16px;
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+}
+.page__hd {
+    padding: 40px;
+}
+.page__bd {
+    /* padding-bottom: 40px; */
+  padding-bottom: 10px; 
+
+}
+.page__bd_spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page__ft{
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: left;
+    font-size: 14px;
+}
+
+
+

@@ -1,0 +1,64 @@
+/* pages/me/me.wxss */
+
+.container100 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.user-head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400rpx;
+  background-color: white;
+}
+
+.user-avater {
+  width:160rpx;
+  height:160rpx;
+  clip-path:circle(80rpx at center);
+  margin-top: 80rpx;
+  margin-bottom: 40rpx;
+}
+
+
+.item {
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 2rpx;
+}
+
+.item text {
+  font-size: 28rpx;
+  color: #333;
+  align-self: center;
+}
+
+.item image {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.about {
+  font-size: 28rpx;
+  color: #8A8A8A;
+  margin-top: 50rpx;
+  margin-bottom: 10rpx;
+  margin-left: 30rpx;
+}
+
+
+
+

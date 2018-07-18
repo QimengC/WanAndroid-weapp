@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view wx:for='{{list}}' wx:for-item='item' wx:key='key0' style='background-color: #eee;'>
+  <view class='item' bindtap='chapterClick' data-name='{{item.name}}' data-content='{{item.children}}'>
+    <view class='title'>{{item.name}}</view>
+    <view class='chapter'>
+      <block wx:for='{{item.children}}' wx:key='key1'>
+        <text style='flex-grow:1;margin: 0 5rpx;'>{{item.name}}</text>
+      </block>
+    </view>
+  </view>
+</view>

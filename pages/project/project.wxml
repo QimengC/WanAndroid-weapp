@@ -1,0 +1,26 @@
+<!--pages/project/project.wxml-->
+<block wx:for='{{projectList}}' wx:for-item='item' wx:key='key0'>
+  <view class='item' bindtap='onItemClick' data-link='{{item.link}}'>
+    <image class='cover' mode='aspectFill' src='{{item.envelopePic}}' />
+    <view class='content'>
+      <text class='chapter'>{{item.title}}</text>
+       <!-- <text class='title'>{{item.desc}}</text>  -->
+       <title>{{item.desc}}</title> 
+      <view class='bottom'>
+        <image class='img' src='/image/author.png' />
+        <text class='author'>{{item.author}}</text>
+        <text class='time'>{{item.niceDate}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+<view class="page__bd">
+  <view class="weui-loadmore" wx:if='{{hasMore}}'>
+    <view class="weui-loading"></view>
+    <view class="weui-loadmore__tips">正在加载</view>
+  </view>
+  <view class="weui-loadmore weui-loadmore_line" wx:else>
+    <view class="weui-loadmore__tips weui-loadmore__tips_in-line">木有啦~</view>
+  </view>
+</view>

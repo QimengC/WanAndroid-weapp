@@ -1,0 +1,28 @@
+<!--pages/me/me.wxml-->
+<view class='container100'>
+  <view class='user-head'>
+    <view class='user-avater'>
+      <open-data type="userAvatarUrl" />
+    </view>
+    <open-data type='userNickName' lang="zh_CN"></open-data>
+  </view>
+
+  <view class='item'>
+    <text>我的收藏</text>
+    <image src='/image/right.png' />
+  </view>
+  <view class='about'>
+    <text>关于：</text>
+  </view>
+
+  <view class='item' bindtap='githubClick'>
+    <text>项目地址</text>
+    <image src='/image/right.png' />
+  </view>
+
+  <view class='item' bindtap='blogClick'>
+    <text>我的博客</text>
+    <image src='/image/right.png' />
+  </view>
+
+</view>
